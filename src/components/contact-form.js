@@ -3,8 +3,7 @@ import {reduxForm, Field} from 'redux-form';
 
 export default function ContactForm() {
     return (
-        <form onSubmit={props.handleSubmit(values =>
-                    onSubmit(values)>
+        <form onSubmit={handleSubmit}>
             <label htmlFor="name">Your Name</label>
             <Field name="name" id="name" type="text" component="input" />
             <label htmlFor="email">Email address</label>
